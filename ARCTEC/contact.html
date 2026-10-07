@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f1">
+    <meta name="description" content="Start a conversation with RYGRIGGS Arctec about your residential, commercial, interior or renovation project.">
+    <title>Contact the studio — RYGRIGGS Arctec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" id="top"><nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="RYGRIGGS Arctec home"><span class="brand-mark" aria-hidden="true"><img src="brand-symbol.png" alt=""></span><span class="brand-name">RYGRIGGS <span>ARCTEC</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links"><a href="index.html">Home</a><a href="about.html">Studio</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="process.html">Process</a><a href="contact.html" aria-current="page">Contact</a><a class="button button-dark nav-cta" href="#contact-form">Start a project <span aria-hidden="true">↘</span></a></div>
+    </nav></header>
+    <main id="main">
+      <section class="interior-hero" aria-labelledby="page-title">
+        <img class="interior-hero-image" src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=85" alt="Modern home with a welcoming warm interior">
+        <div class="interior-hero-content shell"><p class="eyebrow light-eyebrow">05 / LET’S TALK</p><h1 id="page-title">A good project<br>starts <em>here.</em></h1><p>Tell us what you’re thinking. A first conversation is a chance to understand your goals and find a useful way forward.</p></div>
+      </section>
+      <section class="contact section-pad contact-page" id="contact">
+        <div class="shell contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Tell us about it</p>
+            <h2>Let’s build<br>something <em>remarkable.</em></h2>
+            <p class="lead">A few details about your project will help us prepare for a useful first conversation. It’s fine if some things are still undecided.</p>
+            <div class="contact-details">
+              <div><span class="detail-icon" aria-hidden="true">⌂</span><p><span>Project types</span>Residential, commercial, interiors &amp; renovations</p></div>
+              <div><span class="detail-icon" aria-hidden="true">@</span><p><span>Email</span><a href="mailto:rygriggsarctec@gmail.com">rygriggsarctec@gmail.com</a></p></div>
+              <div><span class="detail-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.96.35 1.9.7 2.8a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.35 1.84.58 2.8.7A2 2 0 0 1 22 16.92Z"/></svg></span><p><span>Phone</span><a href="https://wa.me/19025089346" target="_blank" rel="noopener noreferrer">+1 (902) 508 9346</a></p></div>
+              <div><span class="detail-icon" aria-hidden="true">↗</span><p><span>Our approach</span><a href="process.html">Learn about the project process</a></p></div>
+            </div>
+          </div>
+          <form class="contact-form" id="contact-form" action="https://formspree.io/f/mrpepqaj" method="POST">
+            <div class="form-row">
+              <label>Full name<input name="name" autocomplete="name" placeholder="Your name" required></label>
+              <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+            </div>
+            <div class="form-row">
+              <label>Phone number <span class="optional">(optional)</span><input name="phone" type="tel" autocomplete="tel" placeholder="+1 000 000 0000"></label>
+              <label>Project type<select name="project" required><option value="" disabled selected>Select a project</option><option>Residential</option><option>Commercial</option><option>Interior</option><option>Renovation</option><option>Planning &amp; feasibility</option><option>3D visualisation</option><option>Construction documentation</option><option>Consultation</option><option>Other</option></select></label>
+            </div>
+            <div class="form-row">
+              <label>Estimated budget <span class="optional">(optional)</span><select name="budget"><option value="">Not sure yet</option><option>Under 25,000</option><option>25,000–75,000</option><option>75,000–150,000</option><option>150,000+</option></select></label>
+              <label>When are you hoping to start? <span class="optional">(optional)</span><select name="timeframe"><option value="">Still exploring</option><option>As soon as possible</option><option>Within 3 months</option><option>Within 6 months</option><option>More than 6 months</option></select></label>
+            </div>
+            <label>Tell us about your project<textarea name="message" rows="4" placeholder="The place, the idea, and what you’d like to achieve..." required></textarea></label>
+            <div class="form-submit"><button class="button button-dark" type="submit">Prepare enquiry <span aria-hidden="true">↗</span></button><p class="form-note" id="form-status" aria-live="polite">Your enquiry will be sent securely.</p></div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="shell"><div class="footer-main">
+      <div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark" aria-hidden="true"><img src="brand-symbol.png" alt=""></span><span class="brand-name">RYGRIGGS <span>ARCTEC</span></span></a><p>Designing spaces.<br>Building futures.</p></div>
+      <div class="footer-nav"><span class="footer-label">Explore</span><a href="about.html">Studio</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="process.html">Our process</a></div>
+      <div class="footer-nav"><span class="footer-label">Say hello</span><a href="mailto:rygriggsarctec@gmail.com">rygriggsarctec@gmail.com</a><a href="https://wa.me/19025089346" target="_blank" rel="noopener noreferrer">+1 (902) 508 9346</a><a href="contact.html">Start a project ↗</a></div>
+      <div class="footer-nav"><span class="footer-label">Start here</span><a href="#contact-form">Tell us about your project ↗</a><a href="process.html#faq">Frequently asked questions</a></div>
+    </div><div class="footer-bottom"><span>© <span id="year"></span> RYGRIGGS Arctec. All rights reserved.</span><a href="#top">Back to top ↑</a><span>Designed with purpose.</span></div></div></footer>
+  </body>
+</html>
